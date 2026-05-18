@@ -3,7 +3,7 @@ import pandas as pd
 
 def main():
     # Читаем Excel-файл
-    df = pd.read_excel('sales_data.xlsx')
+    df = pd.read_csv('data.csv')
 
     # Добавляем колонку с суммой продажи
     df['Сумма'] = df['Количество'] * df['Цена']
